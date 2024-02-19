@@ -1,113 +1,127 @@
+import React from "react";
 import Image from "next/image";
 
-export default function Home() {
+import image1 from "../assets/image-1.png";
+import image2 from "../assets/image-2.png";
+import image3 from "../assets/image-3.png";
+import image4 from "../assets/image-4.png";
+import commentImage from "../assets/comment.png";
+import heart from "../assets/heart.svg";
+import arrow from "../assets/arrow.svg";
+
+export default function page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
+    <div className="xl:flex justify-start items-start m-auto w-fit">
+      <section className="w-full max-w-[860px] px-8 xl:border-r-2 border-[#E8E8E8]">
+        <div className="font-lato text-xs text-[#666666]">22 Jan 2024 | By John</div>
+        <div className="font-playfair text-black text-3xl font-semibold max-w-[600px] my-3">Event Planning Essentials: From Catering To Decor</div>
+        <Image src={image1} className="w-full mt-" />
+        <p className="font-lato text-lg text-[#1A1A1A] my-5">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+        <div className="md:flex justify-start items-start gap-5 my-10 w-full">
+          <div className="w-full md:w-[40%] aspect-[1.6]">
+            <Image src={image2} className="w-full h-full" />
+          </div>
+          <p className="font-lato text-lg text-[#000000] md:w-[60%] mt-3 md:mt-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <h2 className="font-playfair text-xl text-[#345B4D] font-semibold">Comments</h2>
+        <textarea name="" id="" cols="30" rows="5" className="font-lato w-full rounded-lg border-[#1A1A1A] border-[1px] p-4 my-3" placeholder="Add to the discussion"></textarea>
+        <button className="bg-[#1A1A1A] text-white px-5 py-2 rounded-md mb-5 font-lato">Submit</button>
+        <div className="my-3 py-5 border-t-[1px] border-[#EAE0D5] font-lato">
+          <div className="flex gap-2 items-center">
+            <Image src={commentImage} className="w-[40px] h-[40px] mr-3" />
+            <h4 className="text-sm font-semibold border-r-[1px] border-[#1A1A1A] pr-2">Ashlin</h4>
+            <h4 className="text-sm font-semibold">Jan 01, 2024</h4>
+          </div>
+          <div className="text-sm text-[#1A1A1A] my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+          <div className="flex gap-3 items-center">
+            <div className="bg-[#EB222A] border-[1px] border-[#EB222A] px-5 py-2 flex justify-center items-center gap-1 rounded-md">
+              <Image src={heart} className="w-[20px]" />
+              <p className="text-white text-sm font-medium">3</p>
+            </div>
+            <div className="bg-[#FFFAF5] border-[1px] border-[#EAE0D5] px-5 py-2 flex justify-center items-center gap-1 rounded-md">
+              <Image src={arrow} className="w-[20px]" />
+              <p className="text-[#4B4B4B] text-sm font-medium">Reply</p>
+            </div>
+          </div>
+        </div>
+        <div className="my-3 py-5 border-t-[1px] border-[#EAE0D5] font-lato">
+          <div className="flex gap-2 items-center">
+            <Image src={commentImage} className="w-[40px] h-[40px] mr-3" />
+            <h4 className="text-sm font-semibold border-r-[1px] border-[#1A1A1A] pr-2">Ashlin</h4>
+            <h4 className="text-sm font-semibold">Jan 01, 2024</h4>
+          </div>
+          <div className="text-sm text-[#1A1A1A] my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+          <div className="flex gap-3 items-center">
+            <div className="bg-[#EB222A] border-[1px] border-[#EB222A] px-5 py-2 flex justify-center items-center gap-1 rounded-md">
+              <Image src={heart} className="w-[20px]" />
+              <p className="text-white text-sm font-medium">3</p>
+            </div>
+            <div className="bg-[#FFFAF5] border-[1px] border-[#EAE0D5] px-5 py-2 flex justify-center items-center gap-1 rounded-md">
+              <Image src={arrow} className="w-[20px]" />
+              <p className="text-[#4B4B4B] text-sm font-medium">Reply</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="w-full max-w-[500px] px-8">
+        <div className="font-playfair text-black text-2xl font-semibold">Recent Posts</div>
+        <div className="flex justify-start items-stretch gap-2 my-4 font-lato">
+          <Image src={image3} className="w-[140px]" />
+          <div className="w-full flex-shrink flex flex-col justify-between">
+            <div>
+              <div className="text-sm leading-[17px] font-semibold">
+                Culinary Creativity: <br /> Signature Dishes For Your Event Menu
+              </div>
+              <div className="text-xs leading-[14px] text-[#1A1A1A] mt-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro autem totam iure quib</div>
+            </div>
+            <div className="text-[10px] text-[#B8B8B8] font-semibold">2 hours ago</div>
+          </div>
+        </div>
+        <div className="flex justify-start items-stretch gap-2 my-4 font-lato">
+          <Image src={image4} className="w-[140px]" />
+          <div className="w-full flex-shrink flex flex-col justify-between">
+            <div>
+              <div className="text-sm leading-[17px] font-semibold">
+                Culinary Creativity: <br /> Signature Dishes For Your Event Menu
+              </div>
+              <div className="text-xs leading-[14px] text-[#1A1A1A] mt-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro autem totam iure quib</div>
+            </div>
+            <div className="text-[10px] text-[#B8B8B8] font-semibold">2 hours ago</div>
+          </div>
+        </div>
+        <div className="flex justify-start items-stretch gap-2 my-4 font-lato">
+          <Image src={image3} className="w-[140px]" />
+          <div className="w-full flex-shrink flex flex-col justify-between">
+            <div>
+              <div className="text-sm leading-[17px] font-semibold">
+                Culinary Creativity: <br /> Signature Dishes For Your Event Menu
+              </div>
+              <div className="text-xs leading-[14px] text-[#1A1A1A] mt-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro autem totam iure quib</div>
+            </div>
+            <div className="text-[10px] text-[#B8B8B8] font-semibold">2 hours ago</div>
+          </div>
+        </div>
+        <div className="flex justify-start items-stretch gap-2 my-4 font-lato">
+          <Image src={image4} className="w-[140px]" />
+          <div className="w-full flex-shrink flex flex-col justify-between">
+            <div>
+              <div className="text-sm leading-[17px] font-semibold">
+                Culinary Creativity: <br /> Signature Dishes For Your Event Menu
+              </div>
+              <div className="text-xs leading-[14px] text-[#1A1A1A] mt-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro autem totam iure quib</div>
+            </div>
+            <div className="text-[10px] text-[#B8B8B8] font-semibold">2 hours ago</div>
+          </div>
+        </div>
+        <div className="xl:block hidden mt-10 border-t-[1px] border-[#E8E8E8] pt-10">
+          <div className="w-full aspect-square bg-[#D9D9D9] rounded-lg flex justify-center items-center">
+            <p>Advertisement</p>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }
