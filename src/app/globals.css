@@ -10,3 +10,9 @@
 .font-playfair{
   font-family: "Playfair Display SC", serif;
 }
+.swiper-button-prev, .swiper-button-next{
+  color: #ffffff !important;
+}
+.swiper-pagination-bullet-active{
+  background-color: #ffffff !important;
+}
