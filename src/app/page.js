@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
 import React from "react";
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import "swiper/css";
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 import image1 from "../assets/image-1.png";
 import image2 from "../assets/image-2.png";
@@ -24,10 +24,10 @@ import arrow from "../assets/arrow.svg";
 export default function page() {
   return (
     <>
-      <div className="w-[80%] m-auto mt-4 mb-10">
-        <Swiper modules={[Navigation, Pagination, Scrollbar, A11y]} spaceBetween={100} slidesPerView={1} onSlideChange={() => console.log("slide change")} onSwiper={(swiper) => console.log(swiper)} navigation
-      pagination={{ clickable: true }}
->
+      <div className="w-[100%] m-auto my-10 relative overflow-hidden">
+        <div className="w-[180%] h-[200px] absolute top-[-180px] left-[50%] translate-x-[-50%] bg-white z-50 rounded-[100%]"></div>
+        <div className="w-[180%] h-[200px] absolute bottom-[-180px] left-[50%] translate-x-[-50%] bg-white z-50 rounded-[100%]"></div>
+        <Swiper modules={[Navigation, Pagination, Scrollbar, A11y]} spaceBetween={10} slidesPerView={2.2} onSlideChange={() => console.log("slide change")} onSwiper={(swiper) => console.log(swiper)}>
           <SwiperSlide>
             <Image src={image5} alt="iamge" className="w-full" />
           </SwiperSlide>
